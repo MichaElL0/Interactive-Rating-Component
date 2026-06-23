@@ -7,6 +7,7 @@
     font-family: "Overpass", sans-serif;
 
     --Orange: hsl(25, 97%, 53%);
+    --Orange-dark: hsl(25, 83%, 39%);
     --White: hsl(0, 100%, 100%);
     --Grey-500: hsl(217, 12%, 63%);
     --Grey-900: hsl(213, 19%, 18%);
@@ -37,7 +38,7 @@ body {
 
 .wrapper {
     background-color: var(--Grey-900);
-    min-height: 50vh;
+    min-height: 46vh;
     min-width: 25vw;
     border-radius: 30px;
 }
@@ -54,11 +55,6 @@ p, label {
     color: var(--Grey-500);
 }
 
-button {
-    background-color: var(--Orange);
-    color: var(--Grey-950);
-}
-
 #rating-select {
     color: var(--Orange);
 }
@@ -67,7 +63,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    gap: 2.8rem;
+    gap: 2rem;
 }
 
 .icon img {
@@ -82,4 +78,31 @@ button {
 .text-wrap h1 {
     margin-bottom: 0.5rem;
     font-weight: 400;
+}
+
+.start-state button {
+    background-color: var(--Orange);
+    color: var(--Grey-950);
+    border-radius: 55px;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+    transition: transform 0.1s;
+}
+
+.start-state button:hover {
+    background-color: var(--Orange-dark);
+    transform: scale(1.02);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
 }
