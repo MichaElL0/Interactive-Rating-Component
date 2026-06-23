@@ -19,41 +19,36 @@
 
   <div class="wrapper">
 
-    <div class="icon">
-      <img src="./images/icon-star.svg" alt="">
+    <div class="start-state">
+      <div class="icon">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <div class="text-wrap">
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="rating">
+        <fieldset>
+          <input type="radio" name="rating" id="r1" value="1">
+          <label for="r1">1</label>
+          <input type="radio" name="rating" id="r2" value="2">
+          <label for="r2">2</label>
+          <input type="radio" name="rating" id="r3" value="3">
+          <label for="r3">3</label>
+          <input type="radio" name="rating" id="r4" value="4">
+          <label for="r4">4</label>
+          <input type="radio" name="rating" id="r5" value="5">
+          <label for="r5">5</label>
+        </fieldset>
+      </div>
+      <button type="button">Submit</button>
+      <!-- Rating state end -->
     </div>
 
-    <div class="text-wrap">
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
-      </p>
-    </div>
-
-    <div class="rating">
-      <fieldset>
-        <input type="radio" name="rating" id="r1" value="1">
-        <label for="r1">1</label>
-
-        <input type="radio" name="rating" id="r2" value="2">
-        <label for="r2">2</label>
-
-        <input type="radio" name="rating" id="r3" value="3">
-        <label for="r3">3</label>
-
-        <input type="radio" name="rating" id="r4" value="4">
-        <label for="r4">4</label>
-
-        <input type="radio" name="rating" id="r5" value="5">
-        <label for="r5">5</label>
-      </fieldset>
-    </div>
-
-    <button type="button">Submit</button>
-    <!-- Rating state end -->
-
-    <div class="end-state">
+    <div class="end-state" hidden>
       <div class="icon-end">
         <img src="./images/illustration-thank-you.svg" alt="">
       </div>

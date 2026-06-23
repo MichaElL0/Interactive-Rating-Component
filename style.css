@@ -4,8 +4,6 @@
     margin: 0;
     line-height: 1.5;
 
-    font-size: 15px;
-
     font-family: "Overpass", sans-serif;
 
     --Orange: hsl(25, 97%, 53%);
@@ -13,6 +11,7 @@
     --Grey-500: hsl(217, 12%, 63%);
     --Grey-900: hsl(213, 19%, 18%);
     --Grey-950: hsl(216, 12%, 8%);
+    --Grey-transparent: hsla(217, 12%, 63%, 0.116);
 }
 
 img, picture, video, canvas, svg {
@@ -30,14 +29,25 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
     background-color: var(--Grey-950);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
     background-color: var(--Grey-900);
+    min-height: 50vh;
+    min-width: 25vw;
+    border-radius: 30px;
 }
 
 h1 {
     color: var(--White);
+}
+
+p {
+    font-size: 15px;
 }
 
 p, label {
@@ -53,3 +63,23 @@ button {
     color: var(--Orange);
 }
 
+.start-state {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2.8rem;
+}
+
+.icon img {
+    border: 15px solid var(--Grey-transparent);
+    border-radius: 100px;
+}
+
+.text-wrap p {
+    width: 35ch;
+}
+
+.text-wrap h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
