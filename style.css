@@ -39,7 +39,7 @@ body {
 .wrapper {
     background-color: var(--Grey-900);
     min-height: 46vh;
-    min-width: 25vw;
+    min-width: 20vw;
     border-radius: 30px;
 }
 
@@ -96,13 +96,43 @@ p, label {
 }
 
 .start-state button:hover {
-    background-color: var(--Orange-dark);
+    background-color: var(--White);
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    border: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: var(--Grey-transparent);
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--White);
+  color: var(--Grey-950);
+}
+
+label:hover {
+    background-color: var(--Orange);
+    color: var(--Grey-950);
 }
