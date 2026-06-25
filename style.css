@@ -136,3 +136,37 @@ label:hover {
     background-color: var(--Orange);
     color: var(--Grey-950);
 }
+
+.end-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2.2rem;
+}
+
+.end-state-text-wrapper {
+    width: 33ch;
+    text-align: center;
+}
+
+.end-state-text-wrapper h1 {
+    margin-bottom: 0.5rem;
+}
+
+#rating-select {
+    background-color: var(--Grey-transparent);
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.hide {
+    display: none;
+}
