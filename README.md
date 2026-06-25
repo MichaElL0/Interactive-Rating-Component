@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive rating component
 
-![Try it live](https://michaell0.github.io/Interactive-Rating-Component/)
+[Try it live](https://michaell0.github.io/Interactive-Rating-Component/)
 
 ## Welcome! 👋
 
